@@ -1,0 +1,16 @@
+spring:
+   application:
+      name: data-service
+   h2:
+      console:
+         enabled: true
+         path: /console
+         settings:
+           trace: false
+           web-allow-others: true
+   jpa:
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.H2Dialect     
+server:
+  port: 8001
